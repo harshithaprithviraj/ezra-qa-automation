@@ -133,6 +133,7 @@ npx playwright show-report
 
 ### Future Improvements
 **Phase 1: Next Sprint**
+
  CI/CD pipeline (GitHub Actions)
 
  Additional test cases
@@ -142,6 +143,7 @@ npx playwright show-report
  Test data management
 
 **Phase 2: Next Quarter**
+
  API testing layer
 
  Performance testing
@@ -151,6 +153,7 @@ npx playwright show-report
  Accessibility testing
 
 **Phase 3: Long Term**
+
  AI-powered testing (self-healing locators)
 
  Load testing
