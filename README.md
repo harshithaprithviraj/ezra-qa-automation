@@ -1,4 +1,4 @@
-# Ezra Booking Flow - QA Assessment
+# Ezra Technical - QA Assessment
 
 ## 📋 Overview
 Comprehensive QA assessment for Ezra's booking flow, including manual test cases and automated test suite using Playwright with JavaScript. This project demonstrates production-level test automation architecture using the Page Object Model (POM) pattern.
@@ -70,13 +70,12 @@ I automated **2 critical test cases** (TC-001, TC-002) with additional validatio
 ### 🚀 Setup Instructions
 Prerequisites:
 Node.js v18+
-npm or yarn
+npm 
 Git
 
 ### Installation
 # 1. Clone repository
 git clone https://github.com/harshithaprithviraj/ezra-qa-automation.git
-cd ezra-qa-automation
 
 # 2. Install dependencies
 npm install
@@ -102,7 +101,7 @@ npx playwright show-report
 ---
 
 ### Trade-offs & Assumptions
-
+**Trade-offs**
 | Decision               | Trade-off             | Rationale                                     |
 | ---------------------- | --------------------- | --------------------------------------------- |
 | Automate 2 of 15 tests | Coverage vs speed     | Focus on highest-impact paths                 |
@@ -110,7 +109,7 @@ npx playwright show-report
 | POM architecture       | Initial setup time    | Long-term maintainability and scalability     |
 | Real integrations      | Less isolation        | Higher confidence in production behavior      |
 
-Assumptions
+**Assumptions**
 ✅ Environment: Staging stable 24/7, test data persists, Stripe test mode enabled
 ✅ Authentication: Test credentials remain valid, no MFA/2FA
 ✅ Booking System: At least one slot always available
@@ -118,28 +117,22 @@ Assumptions
 ✅ Data: Tests can create bookings without manual cleanup
 
 ### Architectural Decisions
-Why Page Object Model?
+**Why Page Object Model?**
 
-Centralized selectors and actions
+✅Centralized selectors and actions
+✅Cleaner, more readable tests
+✅Easier updates when UI changes
+✅Scales well as coverage grows
 
-Cleaner, more readable tests
+**Why Playwright?**
 
-Easier updates when UI changes
-
-Scales well as coverage grows
-
-Why Playwright?
-
-Built-in auto-waiting reduces flakiness
-
-Strong support for modern web apps
-
-Cross-browser support when needed
-
-First-class reporting and debugging tools
+✅Built-in auto-waiting reduces flakiness
+✅Strong support for modern web apps
+✅Cross-browser support when needed
+✅First-class reporting and debugging tools
 
 ### Future Improvements
-Phase 1: Next Sprint
+**Phase 1: Next Sprint**
  CI/CD pipeline (GitHub Actions)
 
  Additional test cases
@@ -148,7 +141,7 @@ Phase 1: Next Sprint
 
  Test data management
 
-Phase 2: Next Quarter
+**Phase 2: Next Quarter**
  API testing layer
 
  Performance testing
@@ -157,7 +150,7 @@ Phase 2: Next Quarter
 
  Accessibility testing
 
-Phase 3: Long Term
+**Phase 3: Long Term**
  AI-powered testing (self-healing locators)
 
  Load testing
@@ -173,9 +166,7 @@ Email: harshithaptiwari@gmail.com
 GitHub: https://github.com/harshithaprithviraj/ezra-qa-automation
 
 Date: January 6, 2026
-Author: Harshitha Prithvi Raj
-Email: [harshithaptiwari@gmail.com]
-GitHub: https://github.com/harshithaprithviraj/ezra-qa-automation
+
 
 
 
